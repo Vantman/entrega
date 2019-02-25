@@ -115,55 +115,55 @@ nav ul li a {
 
 /*PRINCIPAL*/
 .principal {
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 100%;
+max-width: 100%;
+margin: 0 auto;
 }
 
 .principal img {
+    width: 100%;
     height: auto;
     max-width: 100%;
-    text-align: center;
+    text-align: justify;
     display: block;
     }
 
 
 /*VIDEO*/
 
-.video {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-}
-
-.video iframe,  
-.video object,  
-.video embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    }
+    
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+    
 
 /*DISCOS*/
 .diss {
-    text-align: center;
-    line-height: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr;
-
+    grid-template-rows: 1fr 1fr;
 }
 
-.dissh {
+
+.diss .dissh {
     width: 100%;
 }
 .diss > .dissh:hover {
     transform: scale(1.1); 
 }
 
-.diss > div {
+.diss .dissh > div {
     display: inline-block;
     padding: 20px;
 }
@@ -286,41 +286,36 @@ footer {
     
     .principal img {
         height: auto;
-        max-width: 30%;
+        max-width: 100%;
         }
 
     /*VIDEO*/
 
-    #videos {
+    #video2 {
         height: auto;
-        max-width: 30%;
+        max-width: 20%;
         }
 
     /*Discos*/ 
     .diss {
-        
-        margin:0px;
-        padding:0px;
-        padding-left:5%;
-        display:block;
-        float:none;
-        text-align:center;
-        padding-left:20%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
 
     .diss > div {
         display: inline-block;
         padding: 20px;
+        text-align: center;
     }   
 
     /*Biografia*/
     
     #bio img {
-        height: auto;
-        max-width: 30%;
-    float: none;
-    text-align: center;
-    display: block;
+        float: none;
+        margin-left: auto;
+        margin-right:auto;
+        display: block;  
     }
 
     #bio p {
